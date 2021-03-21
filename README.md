@@ -1,3 +1,3 @@
-# realtimechatApp
+A photogallery project using project using react integrated with tailwindcss
 
-Realtimechat app using React
+<a href="https://piyaasok.gitlab.io/tailwind-react/">Demo Link</a>
