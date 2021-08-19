@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+ {{> header}}
+ <title>Document</title>
+</head>
+<body>
+ <h1>Register</h1>
+ <div class="container">
+  	{{> menu}}
+   <form action="/register" method="POST">
+  <div class="form-group">
+    <label>Username</label>
+    <input type="text" class="form-control" name="username"   placeholder="Enter username">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" name="password" placeholder="Password">
+  </div>
+  <button type="submit" class="btn btn-primary">Register</button>
+</form>
+{{#message}}
+ <div class="alert alert-danger">{{message}}</div>
+ {{/message}}
+ </div>
+ 
+ {{> footer}}
+</body>
+</html>
