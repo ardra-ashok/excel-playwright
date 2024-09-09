@@ -3,7 +3,7 @@ const ExcelJs = require('exceljs')
 async function writeExcelTest(searchText, replaceText, change, filePath) {
   const workbook = new ExcelJs.Workbook()
 
-  await workbook.xlsx.readFile('./testData.xlsx')
+  await workbook.xlsx.readFile(filePath)
  const worksheet = workbook.getWorksheet('Sheet1')
    output = await readExcel(worksheet,searchText)
   const cell = worksheet.getCell(output.row, output.column+change.colChange)
